@@ -1,0 +1,30 @@
+<div>
+    <div>
+        <div class="card">
+            <img src="combosushi.jpg" alt="Menú">
+            <div>
+                <p>Combo de Sushi</p>
+            </div>
+            <div>
+                <form method="POST" action="/checkout"> <!--pack hardocded-->
+                    <script
+                    src="https://checkout.stripe.com/checkout.js"
+                    class="stripe-button"
+                    data-key="pk_test_QfZBJ9HoMkKCVFoN5PKSDqTi002EmXDQdr"
+                    data-amount= "3000"
+                    data-name="SUSHI COMBO"
+                    data-description="A lot of fish"
+                    data-locale="auto"
+                    data-currency="EUR"
+                    >
+                    </script>
+                    <script>
+                        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                    </script>
+                    <button>
+                        Comprar
+                    </button>
+                </form>
+            </div>
+    </div>
+</div>
